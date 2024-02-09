@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import CategorieView from '../views/CategorieView.vue'
-
+import ClientView from '../views/ClientView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
     // Associe des chemins d'accès au composant vue à afficher
@@ -15,6 +15,11 @@ const router = createRouter({
       path: '/categories',
       name: 'categories',
       component: CategorieView
+    },
+    {
+      path: '/clients',
+      name: 'clients',
+      component: ClientView
     },
     {
       path: '/about',
